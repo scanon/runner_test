@@ -4,7 +4,7 @@ workflow myWorkflow {
 
 task myTask {
     command {
-        echo "hello world"
+        echo "hello world2"
     }
     output {
         String out = read_string(stdout())
