@@ -12,7 +12,11 @@ jobs:
       - name: Dependencies
         run: |
              wget https://github.com/broadinstitute/cromwell/releases/download/79/cromwell-79.jar
+             wget https://github.com/broadinstitute/cromwell/releases/download/79/womtool-79.jar
              java -version
+      - name: Run hello.wdl
+        run: |
+          java -jar womtool-79.jar hello.wdl
       - name: Run hello.wdl
         run: |
           java -jar cromwell-79.jar run hello.wdl 
