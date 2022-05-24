@@ -1,12 +1,10 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  validate_test_wdl:
     runs-on: self-hosted
-    name: A job to say hello
+    name: Job to validate and test WDL
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v3
       - name: Dependencies
