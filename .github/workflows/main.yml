@@ -15,4 +15,4 @@ jobs:
              java -version
       - name: Run hello.wdl
         run: |
-          java -jar cromwell-79.jar hello.wdl 
+          java -jar cromwell-79.jar run hello.wdl 
