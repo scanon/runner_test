@@ -9,5 +9,8 @@ task myTask {
     output {
         String out = read_string(stdout())
     }
+    runtime {
+        docker: "ubuntu:20.04"
+    }
 }
 
